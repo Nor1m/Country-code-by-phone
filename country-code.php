@@ -40,7 +40,9 @@ class CountryCode{
     }
     
     public function getNumber($phone, $prefix){
-        return str_replace( ['+', '-', ' ', $prefix], '', $phone);
+        $number = str_replace( ['+', '-', ' '], '', $phone);
+        $number = substr_replace( $number, '', 0, strlen($prefix) ); 
+        return $number;
     }
     
     public function countryCodes(){
