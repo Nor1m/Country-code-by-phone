@@ -45,6 +45,16 @@ class CountryCode{
         return $number;
     }
     
+    public function getCountryNameByCode($code){
+        $country_names = array_flip( $this->countryCodes() );
+        return $country_names[$code] ? $country_names[$code] : false;
+    }
+    
+    public function getCountryCodeByName($name){
+        $country_codes = $this->countryCodes();
+        return $country_codes[$name] ? $country_codes[$name] : false;
+    }
+    
     public function countryCodes(){
         return [
             'Afganistan' => '93',
