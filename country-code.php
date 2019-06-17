@@ -7,7 +7,7 @@ class CountryCode{
     }
     
     public function getCountryCodeApi($phone){
-        $response = file_get_contents( 'http://ec2-54-67-86-85.us-west-1.compute.amazonaws.com/api/api.php?ANI=' . urlencode($phone) );
+        $response = @file_get_contents( 'http://ec2-54-67-86-85.us-west-1.compute.amazonaws.com/api/api.php?ANI=' . urlencode($phone) );
         if ( $response ) {
             $response = json_decode($response);
             $country_code = $response->countryPrefix;
