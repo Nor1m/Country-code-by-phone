@@ -4,9 +4,7 @@ Get the country code and number by phone number
 ```php
 $CountryCode = new CountryCode();
 $result = $CountryCode->getCountryCode('+79618937262');
-```
 
-```php
 Result:
 array(2){
   ["country_code"]=>
@@ -20,9 +18,7 @@ array(2){
 ```php
 $CountryCode = new CountryCode();
 $result = $CountryCode->getNumber('+79618937262', 7);
-```
 
-```php
 Result: 9618937262
 ```
 
@@ -30,9 +26,7 @@ Result: 9618937262
 ```php
 $CountryCode = new CountryCode();
 $result = $CountryCode->getCountryCodeByName('San Marino');
-```
 
-```php
 Result: 378
 ```
 
@@ -40,18 +34,14 @@ Result: 378
 ```php
 $CountryCode = new CountryCode();
 $result = $CountryCode->getCountryNameByCode(378);
-```
 
-```php
 Result: San Marino
 ```
 
 
 ```php
 $result = $CountryCode->countryCodes();
-```
 
-```php
 Result:
 array(196){
   ["Afganistan"]=>
