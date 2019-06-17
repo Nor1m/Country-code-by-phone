@@ -40,6 +40,7 @@ Result: San Marino
 
 
 ```php
+$CountryCode = new CountryCode();
 $result = $CountryCode->countryCodes();
 
 Result:
