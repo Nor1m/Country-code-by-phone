@@ -3,23 +3,23 @@ Get the country code and number by phone number
 
 ```php
 $CountryCode = new CountryCode();
-$result = $CountryCode->getCountryCode('+79618937262');
+$result = $CountryCode->getCountryCode('+79876543210');
 
 Result:
 array(2){
   ["country_code"]=>
   string(1) "7"
   ["number"]=>
-  string(10) "9618937262"
+  string(10) "9876543210"
 }
 ```
 
 
 ```php
 $CountryCode = new CountryCode();
-$result = $CountryCode->getNumber('+79618937262', 7);
+$result = $CountryCode->getNumber('+79876543210', 7);
 
-Result: 9618937262
+Result: 9876543210
 ```
 
 
