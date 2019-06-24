@@ -1,6 +1,6 @@
 # Country-code-by-phone
 Get the country code and number by phone number
-
+## Using
 ```php
 $CountryCode = new CountryCode();
 $result = $CountryCode->getCountryCode('+79876543210');
